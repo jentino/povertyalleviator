@@ -66,14 +66,14 @@
 	  	</div>
 
     <div id="middle">
-        <h4>Local</h4>
+        <h4>Server</h4>
           <p>
           <div id="theseconds"></div>
         </p>
       </div>
 
     <div id="middle">
-      <h4>Server</h4>
+      <h4>Timer</h4>
         <p>
           <div id="mycounter"> - </div>
         </p>

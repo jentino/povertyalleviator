@@ -16,9 +16,7 @@ onMessage = function(msg) {
 			writeToScreenEmail((js.authorize.email).bold());
 			OriginalBalance = js.authorize.balance;
 			//onPinger();
-	        //onSecTimer();
-	        //alert("sdfsd");
-
+	        onSecTimer();
 	        onCandleTimer();
 
 	        subscribeTransactions();

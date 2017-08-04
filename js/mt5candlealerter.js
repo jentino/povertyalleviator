@@ -33,12 +33,6 @@ function onCandleTimer() {
   //alert(i);
   ii--;
   dot_update();
-  if (ws) {
-      ws.send(JSON.stringify({
-                time: 1
-            }));
-  }
-
   if (ii < 0) {    
     ii = 300000;    
   }

@@ -30,7 +30,6 @@ var data = "post_dot_id=" + dotid;
 
 ii = 300000;
 function onCandleTimer() {
-  alert(i);
   ii--;
   dot_update();
 

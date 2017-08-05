@@ -22,7 +22,7 @@
 
 <body>
 
-<audio id="audio" src="beep.wav" autostart="false" ></audio>
+<audio id="audio" src="sounds/beep.wav" autostart="false" ></audio>
 
 
 <!-------------------------------------- SELECTION HEADER ------------------------------------ -->
@@ -58,7 +58,9 @@
 						<select id="myTokens" onchange="Connect(this.value);">
 						  	<option value=""> </option>
 						    <option value="kS7A68xssbTVpkE">Jenty Demo Account</option>
-						  	<option value="COQz3VcylK89JoT"> Real Account</option>
+						    <option value="nBvBHHOe84bgXMK">Jenty Real Account</option>
+						  	<option value="COQz3VcylK89JoT"> Carline Real Account</option>
+						  	<option value="xwzTFS9BwGxjPZZ"> Carline Demo Account</option>
 						</select>	
 					</form>
 				</div>
@@ -89,9 +91,65 @@
     <div id="right">
       <h4>Trade</h4>
         <p>
-        <div id="mycandle"></div>
+        <div id=""></div>
       </p>
     </div>
+
+	</div> 	 
+</div>
+<br>
+<!-------------------------------------- ACCOUNTING HEADER (BUTTONS) ------------------------------------ -->
+
+
+<div id="getTradeOpDash">
+	<div id="row">
+	  	
+	  	<!-- <div id="dotimg10"></div>
+	  	</div>
+	  	
+	  	<div id="middle">
+	  		<div id="dotimg9"></div>
+	  	</div>
+	  	
+	  	<div id="middle">
+	  		<div id="dotimg8"></div>
+	  	</div>
+
+	  	<div id="right">
+	  		<div id="dotimg7"></div>
+	  	</div>
+
+	  	<div id="left">
+	  		<div id="dotimg6"></div>
+	  	</div>
+	  	<div id="left">
+	  		<div id="dotimg5"></div>
+	  	</div>
+	  	
+	  	<div id="middle">
+	  		<div id="dotimg4"></div>
+	  	</div>
+	  	
+	  	<div id="middle">
+	  		<div id="dotimg3"></div>
+	  	</div>
+
+	  	<div id="right">
+	  		<div id="dotimg2"></div>
+	  	</div>
+ -->	<div id="left">
+	  		<div id="dotimg2">current candle</div>
+	  	</div>
+	  	<div id="right">
+	  		<div id="dotimg1"></div>
+	  	</div>
+
+	  	<div id="left">
+	  		<div id="dotimg3">next candle</div>
+	  	</div>
+	  	<div id="right">
+	  		<div id="mycandle"></div>
+	  	</div>
 
 	</div> 	 
 </div>

@@ -1,6 +1,7 @@
 //////////////////////////////////////////////////// PARSE JSON RESPONSES (WRITETOSCREEN)////////////////////////////////////////////////
 
 onMessage = function(msg) {
+	
         js = JSON.parse(msg.data);
 		
 		//Just for check for error
@@ -12,6 +13,7 @@ onMessage = function(msg) {
         //Display response from authorization
 		if (js.msg_type == 'authorize') {
             var get = parseGetVars();
+
             writeToScreen("Authorized OK".bold().fontcolor("Green") + "<br>  Email: " + (js.authorize.email).bold() + "  Account: " + (js.authorize.loginid).bold() + " Amount = " + "$ ".bold() + (js.authorize.balance).bold());
 			writeToScreenEmail((js.authorize.email).bold());
 			OriginalBalance = js.authorize.balance;

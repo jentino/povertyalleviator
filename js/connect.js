@@ -10,11 +10,26 @@
             writeToScreen("Invalid API Token");
             return;
         } 
-		if (token == "kS7A68xssbTVpkE") //Jenty Demo
+
+		else if (token == "kS7A68xssbTVpkE"){
 			appid = 6490;
-			
-		else if (token =="COQz3VcylK89JoT") //Carline Live
+			trader_name = "Jenty Demo Account";
+		}
+
+		else if (token == "nBvBHHOe84bgXMK"){
+			appid = 10123;
+			trader_name = "Jenty Real Account";
+		}
+
+		else if (token =="COQz3VcylK89JoT"){
 			appid = 6841;
+			trader_name = "Carline Real Account";
+		}
+
+		else if(token =="xwzTFS9BwGxjPZZ"){
+			appid = 10122;
+			trader_name = "Carline Demo Account";
+		}
 			
 		else 
 			{ 
@@ -24,6 +39,7 @@
 			
 		ws = new WebSocket('wss://ws.binaryws.com/websockets/v3?app_id='+appid); 
 		
+			
 //////////////////////////////////////////////////////////Event listeners
 		
 		//listen to request to open websocket

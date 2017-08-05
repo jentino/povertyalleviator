@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$dotid = 1;
+$dotid = $_POST['img_id'];
 
 $sql = "SELECT dot_id, dot_dir FROM tbl_dots WHERE dot_id=$dotid";
 $result = $conn->query($sql);

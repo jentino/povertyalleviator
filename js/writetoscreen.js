@@ -16,12 +16,12 @@ function writeToScreen(message) {
 }
 		
 function writeToScreenEmail(email) {
-			var newstr;
-			if(email.match("cjpienaar@gmail.com"))
-				newstr = "Carline Pienaar - Live";
-			else if (email.match("jentino@gmail.com"))
-				newstr = "Jenty Mepa - Demo";
-				document.getElementById("welcomeuser").innerHTML = newstr.bold();
+			// var newstr;
+			// if(email.match("cjpienaar@gmail.com"))
+			// 	newstr = "Carline Pienaar";
+			// else if (email.match("jentino@gmail.com"))
+			// 	newstr = "Jenty Mepa";
+				document.getElementById("welcomeuser").innerHTML = trader_name.bold();
 	}
 		
 	function writeTimeToScreen(thetime) {

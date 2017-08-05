@@ -31,10 +31,10 @@ function onSecTimer() {
 		  
 		  ii--;
 		  if (ws) {
-		  ws.send(JSON.stringify({
-                time: 1
-            }));
-          }
+			  ws.send(JSON.stringify({
+	                time: 1
+	            }));
+	          }
 		  if (ii < 0) {
 			ii = 300000;
 		  }
@@ -54,6 +54,7 @@ function onPinger() {
             ws.send(JSON.stringify({
                 ping: 1
             }));
+            
         }
     setTimeout(onPinger, 1000);
 	

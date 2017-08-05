@@ -12,7 +12,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$dot_name = $_GET['dotname'];
+$candle1_colour = $_GET['candle1_colour_id'];
+$dot_colour = $_GET['dot_colour_id'];
 
 //$sql = "INSERT INTO tbl_dots (dot_dir) VALUES ('$dot_name') WHERE dot_id='1';
 
@@ -20,12 +21,19 @@ $dot_name = $_GET['dotname'];
 
 //$sql = "INSERT INTO tbl_dots (dot_dir) VALUES ('$dot_name') WHERE dot_id='1';
 
-$sql = "UPDATE tbl_dots SET dot_dir='$dot_name' WHERE dot_id=1";
+$sql1 = "UPDATE tbl_dots SET dot_dir='$candle1_colour' WHERE dot_id=1";
+$sql2 = "UPDATE tbl_dots SET dot_dir='$dot_colour' WHERE dot_id=2";
 
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+if ($conn->query($sql1) === TRUE) {
+    echo "New sql1 record created successfully.<br>";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $sql1 . "<br>" . $conn->error;
+}
+
+if ($conn->query($sql2) === TRUE) {
+    echo "New sql2 record created successfully.<br>";
+} else {
+    echo "Error: " . $sql2 . "<br>" . $conn->error;
 }
 
 $conn->close();

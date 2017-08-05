@@ -61,6 +61,14 @@ function dot_update(dbgindex)
     var red = "reddot";
   }
 
+  else if (dbgindex == 8) {
+ 
+    var display_div_id = "dot5";
+    var data = "candle_id=dot5";
+    var green = "greendot";
+    var red = "reddot";
+  }
+
 var xhr;
 
  if (window.XMLHttpRequest) { // Mozilla, Safari, ...
@@ -104,6 +112,7 @@ function onCandleTimer() {
   dot_update(5);
   dot_update(6);
   dot_update(7);
+  dot_update(8);
 
   if (ii < 0) {    
     ii = 300000;    

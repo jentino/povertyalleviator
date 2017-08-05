@@ -140,7 +140,14 @@
  -->	
 
 	  	<div id="left">
-	  		<div>Dot4</div>
+	  		<div>D5</div>
+	  	</div>
+	  	<div id="left">
+	  		<div id="dot5"></div>
+	  	</div>
+
+	  	<div id="left">
+	  		<div>D4</div>
 	  	</div>
 	  	<div id="left">
 	  		<div id="dot4"></div>
@@ -148,35 +155,35 @@
 
 
 	  	<div id="right">
-	  		<div>Dot3</div>
+	  		<div>D3</div>
 	  	</div>
 	  	<div id="right">
 	  		<div id="dot3"></div>
 	  	</div>
 
 	  	<div id="right">
-	  		<div>Dot2</div>
+	  		<div>D2</div>
 	  	</div>
 	  	<div id="right">
 	  		<div id="dot2"></div>
 	  	</div>
 
 	  	<div id="right">
-	  		<div>Dot1</div>
+	  		<div>D1</div>
 	  	</div>
 	  	<div id="right">
 	  		<div id="dot1"></div>
 	  	</div>
 
 	  	<div id="left">
-	  		<div >6th</div>
+	  		<div >Sig</div>
 	  	</div>
 	  	<div id="right">
 	  		<div id="candle6"></div>
 	  	</div>
 
 	  	<div id="right">
-	  		<div>Current</div>
+	  		<div>Cur</div>
 	  	</div>
 	  	<div id="right">
 	  		<div id="candle1"></div>

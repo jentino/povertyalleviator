@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "cookies";
-$dbname = "moneymachinedb";
+$dbname = "povertyalleviatordb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -12,8 +12,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$candle1_colour = $_GET['candle1_colour_id'];
-$dot_colour = $_GET['dot_colour_id'];
+$candle1 = $_GET['candle1'];
+$candle5 = $_GET['candle5'];
+$candle6 = $_GET['candle6'];
+$dot1 = $_GET['dot1'];
 
 //$sql = "INSERT INTO tbl_dots (dot_dir) VALUES ('$dot_name') WHERE dot_id='1';
 
@@ -21,20 +23,14 @@ $dot_colour = $_GET['dot_colour_id'];
 
 //$sql = "INSERT INTO tbl_dots (dot_dir) VALUES ('$dot_name') WHERE dot_id='1';
 
-$sql1 = "UPDATE tbl_dots SET dot_dir='$candle1_colour' WHERE dot_id=1";
-$sql2 = "UPDATE tbl_dots SET dot_dir='$dot_colour' WHERE dot_id=2";
+$sql = "UPDATE tblsignals SET candle1='$candle1', candle5='$candle5', candle6='$candle6', dot1='$dot1' WHERE candle_id=1";
 
-if ($conn->query($sql1) === TRUE) {
-    echo "New sql1 record created successfully.<br>";
+if ($conn->query($sql) === TRUE) {
+    echo "sql executed successfully.<br>";
 } else {
-    echo "Error: " . $sql1 . "<br>" . $conn->error;
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-if ($conn->query($sql2) === TRUE) {
-    echo "New sql2 record created successfully.<br>";
-} else {
-    echo "Error: " . $sql2 . "<br>" . $conn->error;
-}
 
 $conn->close();
 ?>

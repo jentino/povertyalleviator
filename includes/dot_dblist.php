@@ -2,24 +2,27 @@
 $servername = "localhost";
 $username = "root";
 $password = "cookies";
-$dbname = "moneymachinedb";
+$dbname = "povertyalleviatordb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
+
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$dotid = $_POST['img_id'];
-
-$sql = "SELECT dot_id, dot_dir FROM tbl_dots WHERE dot_id=$dotid";
+$candleid = $_POST['candle_id'];
+//alert(candleid);
+$sql = "SELECT $candleid FROM tblsignals";
 $result = $conn->query($sql);
+
+//echo "<script type='text/javascript'>alert('$candleid');</script>";
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "" . $row["dot_dir"]. "";
+        echo "" . $row["$candleid"]. "";
     }
 } else {
     echo "0 results";

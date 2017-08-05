@@ -91,7 +91,7 @@
     <div id="right">
       <h4>Trade</h4>
         <p>
-        <div id=""></div>
+        <div id="mycandle"></div>
       </p>
     </div>
 
@@ -138,17 +138,31 @@
 	  		<div id="dotimg2"></div>
 	  	</div>
  -->	<div id="left">
-	  		<div id="dotimg2">current candle</div>
+	  		<div >6th</div>
 	  	</div>
 	  	<div id="right">
-	  		<div id="dotimg1"></div>
+	  		<div id="candle6"></div>
 	  	</div>
 
 	  	<div id="left">
-	  		<div id="dotimg3">next candle</div>
+	  		<div>5th</div>
 	  	</div>
 	  	<div id="right">
-	  		<div id="mycandle"></div>
+	  		<div id="candle5"></div>
+	  	</div>
+
+	  	<div id="right">
+	  		<div>Dot1</div>
+	  	</div>
+	  	<div id="right">
+	  		<div id="dot1"></div>
+	  	</div>
+
+	  	<div id="right">
+	  		<div>Current</div>
+	  	</div>
+	  	<div id="right">
+	  		<div id="candle1"></div>
 	  	</div>
 
 	</div> 	 

@@ -151,6 +151,21 @@
 	  		<div id="candle5"></div>
 	  	</div>
 
+
+	  	<div id="right">
+	  		<div>Dot3</div>
+	  	</div>
+	  	<div id="right">
+	  		<div id="dot3"></div>
+	  	</div>
+
+	  	<div id="right">
+	  		<div>Dot2</div>
+	  	</div>
+	  	<div id="right">
+	  		<div id="dot2"></div>
+	  	</div>
+
 	  	<div id="right">
 	  		<div>Dot1</div>
 	  	</div>

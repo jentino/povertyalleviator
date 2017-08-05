@@ -7,26 +7,27 @@ function dot_update(dbgindex)
 
   if(dbgindex== 1){
 
+////////////////////////////////////////////current
     var display_div_id = "candle1";
     var data = "candle_id=candle1";
     var green = "greencandle";
     var red = "redcandle";
 
   } else if (dbgindex == 2) {
- 
+////////////////////////////////////////////5th
     var display_div_id = "candle6";
     var data = "candle_id=candle6";
     var green = "greencandle";
     var red = "redcandle";
   }
     else if (dbgindex == 3) {
- 
+////////////////////////////////////////////next  
     var display_div_id = "mycandle";
     var data = "candle_id=candle5";
     var green = "greencandle";
     var red = "redcandle";
   }
-
+/////////////////////////////////////////////dots
     else if (dbgindex == 4) {
  
     var display_div_id = "dot1";
@@ -43,10 +44,19 @@ function dot_update(dbgindex)
     var red = "reddot";
   }
 
+
   else if (dbgindex == 6) {
  
     var display_div_id = "dot3";
     var data = "candle_id=dot3";
+    var green = "greendot";
+    var red = "reddot";
+  }
+
+  else if (dbgindex == 7) {
+ 
+    var display_div_id = "dot4";
+    var data = "candle_id=dot4";
     var green = "greendot";
     var red = "reddot";
   }
@@ -93,6 +103,7 @@ function onCandleTimer() {
   dot_update(4);
   dot_update(5);
   dot_update(6);
+  dot_update(7);
 
   if (ii < 0) {    
     ii = 300000;    

@@ -140,10 +140,10 @@
  -->	
 
 	  	<div id="left">
-	  		<div>5th</div>
+	  		<div>Dot4</div>
 	  	</div>
-	  	<div id="right">
-	  		<div id="candle5"></div>
+	  	<div id="left">
+	  		<div id="dot4"></div>
 	  	</div>
 
 

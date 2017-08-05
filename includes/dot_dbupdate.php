@@ -18,6 +18,7 @@ $candle6 = $_GET['candle6'];
 $dot1 = $_GET['dot1'];
 $dot2 = $_GET['dot2'];
 $dot3 = $_GET['dot3'];
+$dot4 = $_GET['dot4'];
 
 //$sql = "INSERT INTO tbl_dots (dot_dir) VALUES ('$dot_name') WHERE dot_id='1';
 
@@ -25,7 +26,7 @@ $dot3 = $_GET['dot3'];
 
 //$sql = "INSERT INTO tbl_dots (dot_dir) VALUES ('$dot_name') WHERE dot_id='1';
 
-$sql = "UPDATE tblsignals SET candle1='$candle1', candle5='$candle5', candle6='$candle6', dot1='$dot1', dot2='$dot2', dot3='$dot3' WHERE candle_id=1";
+$sql = "UPDATE tblsignals SET candle1='$candle1', candle5='$candle5', candle6='$candle6', dot1='$dot1', dot2='$dot2', dot3='$dot3', dot4='$dot4' WHERE candle_id=1";
 
 if ($conn->query($sql) === TRUE) {
     echo "sql executed successfully.<br>";

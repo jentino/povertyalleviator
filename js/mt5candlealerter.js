@@ -21,7 +21,7 @@ function dot_update(dbgindex)
   }
     else if (dbgindex == 3) {
  
-    var display_div_id = "candle5";
+    var display_div_id = "mycandle";
     var data = "candle_id=candle5";
     var green = "greencandle";
     var red = "redcandle";
@@ -74,7 +74,7 @@ var xhr;
 
       } else {
 
-        document.getElementById(display_div_id).innerHTML = "-";
+        document.getElementById(display_div_id).innerHTML = "no";
 
       }
      }
@@ -83,20 +83,9 @@ var xhr;
 
 
 ii = 300000;
-zz = 60;
 function onCandleTimer() {
-  //alert(i);
+
   ii--;
-
-  // if(zz > 1) 
-  //    zz--;
-  // else {
-
-  //   zz = 60;
-  //   countdiv++;
-
-  // }
-      
   
   dot_update(1);
   dot_update(2);

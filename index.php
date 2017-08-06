@@ -14,6 +14,7 @@
 <script type="text/javascript" src="js/jsoncalls.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
 <script type="text/javascript" src="js/buttonswitch.js"></script>
+<script type="text/javascript" src="js/playsound.js"></script>
 <script type="text/javascript" src="js/timers.js"></script>
 <script type="text/javascript" src="js/writetoscreen.js"></script>
 <script type="text/javascript" src="js/mt5candlealerter.js"></script>
@@ -23,6 +24,29 @@
 <body>
 
 <audio id="audio" src="sounds/beep.wav" autostart="false" ></audio>
+<audio id="audio1" src="sounds/pokerchip1.wav" autostart="false" ></audio>
+<audio id="audio2" src="sounds/pokerchip2.wav" autostart="false" ></audio>
+<audio id="audio3" src="sounds/pokerchip3.wav" autostart="false" ></audio>
+<audio id="audio4" src="sounds/pokerchip4.wav" autostart="false" ></audio>
+<audio id="audio5" src="sounds/pokerchip5.wav" autostart="false" ></audio>
+
+<audio id="audio9" src="sounds/pokerchip1.wav" autostart="false" ></audio>
+<audio id="audio10" src="sounds/pokerchip2.wav" autostart="false" ></audio>
+<audio id="audio11" src="sounds/pokerchip3.wav" autostart="false" ></audio>
+<audio id="audio12" src="sounds/pokerchip4.wav" autostart="false" ></audio>
+<audio id="audio13" src="sounds/pokerchip5.wav" autostart="false" ></audio>
+
+<audio id="audio14" src="sounds/loggedin.wav" autostart="false" ></audio>
+<audio id="audio15" src="sounds/beepbeep.wav" autostart="false" ></audio>
+<audio id="audio16" src="sounds/flip.wav" autostart="false" ></audio>
+<audio id="audio17" src="sounds/shortping.wav" autostart="false" ></audio>
+<audio id="audio18" src="sounds/lowping.wav" autostart="false" ></audio>
+<audio id="audio19" src="sounds/highpop.wav" autostart="false" ></audio>
+<audio id="audio20" src="sounds/coinwon.wav" autostart="false" ></audio>
+<audio id="audio21" src="sounds/coinswon.wav" autostart="false" ></audio>
+<audio id="audio22" src="sounds/coinwon.wav" autostart="false" ></audio>
+<audio id="audio23" src="sounds/lost1.wav" autostart="false" ></audio>
+<audio id="audio24" src="sounds/lost2.wav" autostart="false" ></audio>
 
 
 <!-------------------------------------- SELECTION HEADER ------------------------------------ -->
@@ -198,7 +222,7 @@
 	<td>
 		<button type="button" id="getbuttonsDash" onclick="GetBalance()">Balance</button>
 		<button type="button" id="getbuttonsDash" onclick="test()">Server Time</button>
-		<button type="button" id="getbuttonsDash" onclick="GetProfitTable()">Profit Table</button>
+		<button type="button" id="getbuttonsDash" onclick="playSoundTradeButtons(1)">Sound </button>
 		<button type="button" id="getbuttonsDash" onclick="GetStatement()">Statement</button>
 		<button type="button" id="getbuttonsDash" onclick="GetPortfolio()">Live Trades</button>	
 	</td>

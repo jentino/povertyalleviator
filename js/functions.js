@@ -2,13 +2,15 @@
 function checkWinOrLoss(amount){
 
 	if (amount > 0) {
+
 		countwins++;
+		playSoundCustom(21);
 		return amount.bold().fontcolor("Green");
 	}
 	else {
 		
 		countlosses++;
-
+		playSoundCustom(23);
 		return amount.bold().fontcolor("Red");
 	}
 
@@ -19,6 +21,7 @@ function getAsset(assetval) {
     var obj = document.getElementById("myAssets");
     document.getElementById("assetlist").innerHTML = obj.options[obj.selectedIndex].text.bold();
 	assetvalue = assetval;
+	playSoundCustom(16);
 }
 
 //////////////////////////////////////////////////// SHOW BALANCE

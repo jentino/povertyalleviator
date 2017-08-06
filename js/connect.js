@@ -5,7 +5,7 @@
         output = document.getElementById("debug");
 		document.getElementById("debug").innerHTML = "Connecting ..."
 		outputemail = document.getElementById("welcomeuser");
-		
+		playSoundCustom(16);
         if (token == '') {
             writeToScreen("Invalid API Token");
             return;

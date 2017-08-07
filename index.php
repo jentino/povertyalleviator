@@ -228,6 +228,7 @@
 		<div id="ash" class="pad" contenteditable="true">
 		  <div id="a" class="alignDivs">D3  : </div><div id="Doo3" class="alignDivs"></div>
 		  <div id="a" class="alignDivs">Sig : </div><div id="Siig" class="alignDivs"></div>
+		  <div id="a" class="alignDivs">  =   </div><div id="tradeaction" class="alignDivs"></div>
 		</div>
 	</td>
 </table>

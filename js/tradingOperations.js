@@ -6,7 +6,7 @@ function checkWinOrLoss(amount){
 		countwins++;
 		return amount.bold().fontcolor("Green");
 	}
-	else {
+	else if(amount < 0){
 		playSoundCustom(22);
 		countlosses++;
 		return amount.bold().fontcolor("Red");
@@ -26,15 +26,19 @@ function calcTradeTime(newTime) {
 			if(DOT3 == "red" && Sig == "red") {
 				setColor(Sellit,tradeamount[0],9);
 				tcount = dm;
+				document.getElementById("tradeaction").innerHTML = "SELL";
 			} else if (DOT3 == "red" && Sig == "green") {
 				setColor(Buyit,tradeamount[0],1);
 				tcount = dm;
+				document.getElementById("tradeaction").innerHTML = "BUY";
 			} else if (DOT3 == "green" && Sig == "red") {
 				setColor(Buyit,tradeamount[0],1);
 				tcount = dm;
+				document.getElementById("tradeaction").innerHTML = "BUY";
 			} else if (DOT3 == "green" && Sig == "green") {
 				setColor(Sellit,tradeamount[0],9);
 				tcount = dm;
+				document.getElementById("tradeaction").innerHTML = "BUY";
 			} 
 		}
 	}

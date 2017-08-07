@@ -1,5 +1,4 @@
 //////////////////////////////////////////////////// PARSE JSON RESPONSES (WRITETOSCREEN)////////////////////////////////////////////////
-
 onMessage = function(msg) {
 	
         js = JSON.parse(msg.data);
@@ -12,8 +11,9 @@ onMessage = function(msg) {
 
         //Display response from authorization
 		if (js.msg_type == 'authorize') {
-            var get = parseGetVars();
-            playSoundCustom(14);
+
+			playSoundCustom(14);
+			var get = parseGetVars();            
             writeToScreen("Authorized OK".bold().fontcolor("Green") + "<br>  Email: " + (js.authorize.email).bold() + "  Account: " + (js.authorize.loginid).bold() + " Amount = " + "$ ".bold() + (js.authorize.balance).bold());
 			writeToScreenEmail((js.authorize.email).bold());
 			OriginalBalance = js.authorize.balance;
@@ -28,7 +28,7 @@ onMessage = function(msg) {
 
 		if (js.msg_type == 'time') {
             writeTimeToScreen(js.time);
-			
+            calcTradeTime(js.time);
         }
 		
 		if (js.msg_type == 'transaction') {

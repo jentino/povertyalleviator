@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <script language="javascript">      
+        var audioo = document.createElement("audioa");
+
+        // Lets add an event listener to play when we are ready to start playing
+        audioo.addEventListener("canplaythrough", function(){
+            audioo.play(); 
+        }, false); 
+
+        function newCall() {        
+             audioo.src = "";
+             audioo.src = "sounds/woncoins.wav";             
+        } 
+
+        function playAgain() { 
+             // Let's check if we are ready enough to play
+             if(audioo.readyState === 4){                       
+                 audioo.pause(); // first pause        
+                 audioo.currentTime = 0; // then reset           
+                 audioo.play(); // then play
+             } else {
+                 // else inform us that we are not ready to play yet.
+                 alert("Audio not ready yet.");
+             }
+        } 
+
+      </script>
+   </head>
+   <body>
+   <button type="button" onClick="newCall()">New Captcha Call</button>
+   <br>
+   <button type="button" onClick="playAgain()">Replay Captcha</button>   
+</body>
+</html>

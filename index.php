@@ -18,10 +18,11 @@
 <script type="text/javascript" src="js/timers.js"></script>
 <script type="text/javascript" src="js/writetoscreen.js"></script>
 <script type="text/javascript" src="js/mt5candlealerter.js"></script>
-
+<script type="text/javascript" src="js/tradingOperations.js"></script>
 </head>
 
 <body>
+<!-------------------------------------- AUDIO ------------------------------------------------- -->
 
 <audio id="audio" src="sounds/beep.wav" autostart="false" ></audio>
 <audio id="audio1" src="sounds/pokerchip1.wav" autostart="false" ></audio>
@@ -42,11 +43,10 @@
 <audio id="audio17" src="sounds/shortping.wav" autostart="false" ></audio>
 <audio id="audio18" src="sounds/lowping.wav" autostart="false" ></audio>
 <audio id="audio19" src="sounds/highpop.wav" autostart="false" ></audio>
-<audio id="audio20" src="sounds/coinwon.wav" autostart="false" ></audio>
-<audio id="audio21" src="sounds/coinswon.wav" autostart="false" ></audio>
-<audio id="audio22" src="sounds/coinwon.wav" autostart="false" ></audio>
-<audio id="audio23" src="sounds/lost1.wav" autostart="false" ></audio>
-<audio id="audio24" src="sounds/lost2.wav" autostart="false" ></audio>
+<audio id="audio20" src="sounds/woncoins.wav" autostart="false" ></audio>
+<audio id="audio21" src="sounds/woncoin.wav" autostart="false" ></audio>
+<audio id="audio22" src="sounds/lost1.wav" autostart="false" ></audio>
+<audio id="audio23" src="sounds/lost2.wav" autostart="false" ></audio>
 
 
 <!-------------------------------------- SELECTION HEADER ------------------------------------ -->
@@ -220,13 +220,19 @@
 
 <table id="tblgetbuttonsDash">
 	<td>
-		<button type="button" id="getbuttonsDash" onclick="GetBalance()">Balance</button>
-		<button type="button" id="getbuttonsDash" onclick="test()">Server Time</button>
-		<button type="button" id="getbuttonsDash" onclick="playSoundTradeButtons(1)">Sound </button>
+		<!-- <button type="button" id="getbuttonsDash" onclick="playSoundCustom(22);">Lost Sound</button>
+		<button type="button" id="getbuttonsDash" onclick="playSoundCustom	(21)">Won Coins</button>
+		<button type="button" id="getbuttonsDash" onclick="playSound('flip')">Sound </button>
 		<button type="button" id="getbuttonsDash" onclick="GetStatement()">Statement</button>
-		<button type="button" id="getbuttonsDash" onclick="GetPortfolio()">Live Trades</button>	
+		<button type="button" id="getbuttonsDash" onclick="GetPortfolio()">Live Trades</button>	 -->
+		<div id="ash" class="pad" contenteditable="true">
+		  <div id="a" class="alignDivs">D3  : </div><div id="Doo3" class="alignDivs"></div>
+		  <div id="a" class="alignDivs">Sig : </div><div id="Siig" class="alignDivs"></div>
+		</div>
 	</td>
 </table>
+
+
 
 <!-------------------------------------- USER DETAILS DASHBOARD ------------------------------------ -->
 <div id="getUserInfoDash" class="pad" contenteditable="true">

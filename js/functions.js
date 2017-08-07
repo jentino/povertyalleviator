@@ -1,21 +1,3 @@
-//////////////////////////////////////////////////////////////////  COLOUR WIN AND LOSS
-function checkWinOrLoss(amount){
-
-	if (amount > 0) {
-
-		countwins++;
-		playSoundCustom(21);
-		return amount.bold().fontcolor("Green");
-	}
-	else {
-		
-		countlosses++;
-		playSoundCustom(23);
-		return amount.bold().fontcolor("Red");
-	}
-
-}
-
 //////////////////////////////////////////////////// GET ASSET
 function getAsset(assetval) {
     var obj = document.getElementById("myAssets");
@@ -43,7 +25,3 @@ function showProfit(b) {
 
 //////////////////////////////////////////////////// PLAY TICKING SOUND 
 
-function playSound() {
-		var sound = document.getElementById("audio");
-		sound.play();	  
-}

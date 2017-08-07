@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 } 
 
 $candleid = $_POST['candle_id'];
-//alert(candleid);
+
 $sql = "SELECT $candleid FROM tblsignals";
 $result = $conn->query($sql);
 

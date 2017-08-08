@@ -46,7 +46,7 @@ function calcTradeTime(newTime) {
 			} else if (DOT3 == "green" && Sig == "green") {
 				setColor(Sellit,tradeamount[re],9);
 				tcount = dm;
-				document.getElementById("tradeaction").innerHTML = "BUY";
+				document.getElementById("tradeaction").innerHTML = "SELL";
 			} 
 		}
 	}

@@ -24,4 +24,8 @@ function showProfit(b) {
 }
 
 //////////////////////////////////////////////////// PLAY TICKING SOUND 
+//////////////////////////////////////////////////// SHOW PROFIT
+function showRe() {
+	document.getElementById("showre").innerHTML = tradeamount[re];
 
+}

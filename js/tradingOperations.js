@@ -2,21 +2,22 @@
 
 //////////////////////////////////////////////////////////////////  COLOUR WIN AND LOSS
 function checkWinOrLoss(amount){
-	document.getElementById("showtype").innerHTML = typeof amount;
+	document.getElementById("showtype").innerHTML = typeof amount;	
+	var str;
 	if (amount > 0) {
 		playSoundCustom(20);
 		countwins++;
 		re = 0;
-		amount.bold().fontcolor("Green");
+		str = amount.bold().fontcolor("Green");
 	}
 	else{
 		playSoundCustom(22);
 		countlosses++;
 		re++;
-		amount.bold().fontcolor("Red");
+		str = amount.bold().fontcolor("Red");
 	}
 
-	return amount;
+	return str;
 }
 
 var tcount = -4;

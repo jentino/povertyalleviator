@@ -9,6 +9,7 @@ var countwins = 0;
 var trader_name = "";
 var DOT3 = "";
 var Sig = "";
+var re 	= 0;
 
 
 var tradeamount = [0.35,0.72,1.49,3.08,6.35,13.11,27.05,55.82];

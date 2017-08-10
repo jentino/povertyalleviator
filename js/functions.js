@@ -25,7 +25,6 @@ function showProfit(b) {
 
 //////////////////////////////////////////////////// PLAY TICKING SOUND 
 //////////////////////////////////////////////////// SHOW PROFIT
-function showRe() {
-	document.getElementById("showre").innerHTML = tradeamount[re];
-
+function showRescue() {
+	document.getElementById("rescueamount").innerHTML = tradeamount[rescue];
 }

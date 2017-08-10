@@ -127,42 +127,6 @@
 
 <div id="getTradeOpDash">
 	<div id="row">
-	  	
-	  	<!-- <div id="dotimg10"></div>
-	  	</div>
-	  	
-	  	<div id="middle">
-	  		<div id="dotimg9"></div>
-	  	</div>
-	  	
-	  	<div id="middle">
-	  		<div id="dotimg8"></div>
-	  	</div>
-
-	  	<div id="right">
-	  		<div id="dotimg7"></div>
-	  	</div>
-
-	  	<div id="left">
-	  		<div id="dotimg6"></div>
-	  	</div>
-	  	<div id="left">
-	  		<div id="dotimg5"></div>
-	  	</div>
-	  	
-	  	<div id="middle">
-	  		<div id="dotimg4"></div>
-	  	</div>
-	  	
-	  	<div id="middle">
-	  		<div id="dotimg3"></div>
-	  	</div>
-
-	  	<div id="right">
-	  		<div id="dotimg2"></div>
-	  	</div>
- -->	
-
 	  	<div id="left">
 	  		<div>D5</div>
 	  	</div>
@@ -226,11 +190,14 @@
 		<button type="button" id="getbuttonsDash" onclick="GetStatement()">Statement</button>
 		<button type="button" id="getbuttonsDash" onclick="GetPortfolio()">Live Trades</button>	 -->
 		<div id="ash" class="pad" contenteditable="true">
-		  <div id="a" class="alignDivs">D3  : </div><div id="Doo3" class="alignDivs"></div>
-		  <div id="a" class="alignDivs">Sig : </div><div id="Siig" class="alignDivs"></div>
-		  <div id="a" class="alignDivs">  =   </div><div id="tradeaction" class="alignDivs"></div>
-		  <div id="a" class="alignDivs">   : RESCUE =   </div><div id="showre" class="alignDivs"></div>
-		  <div id="a" class="alignDivs">   : typeof =   </div><div id="showtype" class="alignDivs"></div>
+ 		  <div id="a" class="alignDivs">D3  = </div><div id="Doo3" class="alignDivs"></div>
+ 		  <!--<div id="a" class="alignDivs">D2  : </div><div id="Doo2" class="alignDivs"></div>-->
+		  <div id="a" class="alignDivs">Sig = </div><div id="Siig" class="alignDivs"></div>
+		  <div id="a" class="alignDivs">ACTION =    </div><div id="tradeaction" class="alignDivs"></div>
+		  <div id="a" class="alignDivs">RESCUE =   </div><div id="rescueamount" class="alignDivs"></div>
+		 <!--  <div id="a" class="alignDivs">   : Typeof =   </div><div id="showtype" class="alignDivs"></div> -->
+		  <div id="a" class="alignDivs">Minutes =   </div><div id="showminutes" class="alignDivs"></div>
+		  <div id="a" class="alignDivs">Delaycount =   </div><div id="showdelaycount" class="alignDivs"></div>
 		</div>
 	</td>
 </table>

@@ -58,5 +58,19 @@ function onPinger() {
         }
     setTimeout(onPinger, 1000);
 	
+}
+
+//////////////////////////////////////////////////////////////////  PING SERVER
+var kw = 60;
+function delayTrade(minutes) {
+	kw--;
+	if(kw < 0){
+		delayCount = minutes;
+		kw = 60;
+	}
+	else {
+		setTimeout(delayTrade, 1000);
+	}
 }  
+
 

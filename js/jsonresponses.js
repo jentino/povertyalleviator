@@ -29,6 +29,7 @@ onMessage = function(msg) {
 		if (js.msg_type == 'time') {
             writeTimeToScreen(js.time);
             calcTradeTime(js.time);
+            //calcTradeTime2(js.time);
         }
 		
 		if (js.msg_type == 'transaction') {

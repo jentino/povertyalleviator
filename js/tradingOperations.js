@@ -51,22 +51,22 @@ function calcTradeTime(newTime) {
  			if(DOT3 == "red" && Sig == "red") {
  				setColor(Sellit,tradeamount[rescue],9);
  				minuteCounter = minutes;
- 				document.getElementById("tradeaction").innerHTML = "SELL";
+ 				document.getElementById("tradeaction").innerHTML = "PUT";
  			} 
  			else if (DOT3 == "green" && Sig == "green") {
  				setColor(Sellit,tradeamount[rescue],9);
  				minuteCounter = minutes;
- 				document.getElementById("tradeaction").innerHTML = "SELL";
+ 				document.getElementById("tradeaction").innerHTML = "PUT";
  			} 
  			else if (DOT3 == "red" && Sig == "green") {
  				setColor(Buyit,tradeamount[rescue],1);
  				minuteCounter = minutes;
- 				document.getElementById("tradeaction").innerHTML = "BUY";
+ 				document.getElementById("tradeaction").innerHTML = "CALL";
  			} 
  			else if (DOT3 == "green" && Sig == "red") {
  				setColor(Buyit,tradeamount[rescue],1);
  				minuteCounter = minutes;
- 				document.getElementById("tradeaction").innerHTML = "BUY";
+ 				document.getElementById("tradeaction").innerHTML = "CALL";
  			}  
  		}
  	}
